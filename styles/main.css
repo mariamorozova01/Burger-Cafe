@@ -1,0 +1,400 @@
+:root {
+    --open-sans: "Open Sans", sans-serif;
+    --nunito-sans: "Nunito Sans", sans-serif;
+
+    --accent-light: #FBB731;
+    --accent-dark: #F37335;
+    --dark: #443737;
+    --light: #FFFFFF;
+    --light-rgb: 255, 255, 255;
+    --line: #DEDEDE
+}
+a {
+text-decoration: none;
+}
+body {
+    font-family: var(--open-sans);
+    font-style: normal;
+    font-weight: 400;
+.container {
+    width: 100%;
+    max-width: 1182px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*Header*/
+.header {
+    display: flex;
+    align-items: center;
+    gap: 196px;
+    padding: 26px 0;
+    border-bottom: 1px solid var(--line);
+}
+}
+.logo {
+    display: block;
+    width: 175px;
+    height: 56px;
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.nav {
+    flex-grow: 1;
+    display: flex;
+    gap: 47px;
+}
+.nav-link {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 20px;
+
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    border-radius: 1.5px;
+}
+.nav-link:hover::after{
+    background-color: var(--accent-light);
+
+}
+.cart {
+    color: var(--dark);
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+.cart::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 26px;
+    background-image: url(../images/shopping-cart.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 17px;
+    height: 17px;
+    background-color: var(--accent-dark);
+    color: var(--light);
+    font-size: 10px;
+    position: absolute;
+    left: 17px;
+    bottom: 0;
+}
+/*Hero Banner*/
+.hero {
+    background-image: url(../images/Group\ 3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 142px 0;
+}
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 16px;
+    padding: 0;
+    color: rgba(var(--light-rgb), .5);
+    font-size: 15px;
+    margin: 0;
+}
+.breadcrumbs-link {
+    color: rgba(var(--light-rgb), .5);
+}
+.breadcrumbs-link:hover {
+    color: var(--accent-light);
+}
+.breadcrumbs-item {
+    position: relative;
+}
+.breadcrumbs-item:not(:last-child)::after {
+    content: '/';
+    position: absolute;
+    right: -12px;
+}
+.hero-title {
+    color: var(--light);
+    font-size: 79px;
+    font-weight: 700;
+    font-family: var(--nunito-sans);
+    line-height: 6.75rem;
+    text-transform: capitalize;
+    margin: 8px 0 11px 0
+    
+}
+.hero-description {
+    color: rgba(var(--light-rgb), 0.8);
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--open-sans);
+    line-height: 160%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+/*Banner-sale*/
+.banner {
+    margin-top: 140px;
+    margin-bottom: 100px;
+}
+.banner-wrapper{
+    background-image: url(../images/sale.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+.banner-btn {
+    font-family: var(--nunito-sans);
+    color: var(--dark);
+    background-color: var(--accent-light);
+    border-radius: 5px;
+    padding: 20px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+}
+.banner-btn:hover{
+    background-color: var(--accent-dark);
+}
+.banner-description {
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(var(--light-rgb), 0.8);
+    max-width: 307px;
+    line-height: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.banner-title {
+    font-size: 60px;
+    color: var(--light);
+    margin: 0;
+    line-height: 126%;
+}
+.banner-title span {
+    font-size: 14px;
+    line-height: 128%;
+    display: block;
+    font-family: var(--nunito-sans);
+    text-align: center;
+    padding: 5px 0;
+    color: var(--light);
+    background-color: var(--accent-dark);
+    border-radius: 14px;
+    max-width: 95px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+/*Menu*/
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-bottom: 34px;
+}
+.menu-select {
+    color: var(--dark);
+    font-size: 15px;
+    appearance: none;
+    flex-basis: 279px;
+    background-image: url(/images/chevron-down.svg);
+    background-size: 14px 10px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
+    border: 1px solid var(--line);
+    padding: 13px 30px;
+    border-radius: 22px;
+    
+}
+.menu-item {
+    font-family: var(--nunito-sans);
+    text-align: center;
+}
+
+.menu-title {
+   margin: 0; 
+   font-size: 44px;
+   line-height: 3.5rem;
+   font-weight: 700;
+    color: var(--dark);
+    text-transform: uppercase;
+    margin: 0;
+
+}
+.menu-name {
+    color: var(--dark);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    margin: 0 0 10px 0;
+}
+.menu-price {
+    color: rgba(68, 55, 55, 0.5);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 2.38rem;
+    letter-spacing: 0rem;
+    margin: 0 0 10px 0;
+}
+.menu-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 50px 20px;
+}
+.menu-thumb {
+    width: 100%;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.menu-thumb img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    background-color: var(--accent-light);
+    color: var(--dark);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 11px 32px;
+}
+.menu-btn::before {
+    content: '';
+    display: block;
+    width: 18px;
+    background-image: url(/images/cart.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.menu-add {
+    margin-bottom: 140px;
+}
+/*Footer*/
+.footer {
+    background-color: #1E2F40;
+    padding: 110px 0 120px 0;
+    color: #fff;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-logo {
+    display: block;
+    background: url(/images/Logo_light.svg) no-repeat center;
+    background-size: contain;
+    width: 63px;
+    height: 56px;
+}
+
+.footer-title {
+    font-family: var(--nunito-sans);
+    font-size: 20px;
+    margin: 0 0 13px 0;
+    font-weight: 800;
+    color: white;
+    line-height: 2.38rem;
+    text-transform: uppercase;
+
+}
+
+.footer-nav {
+    display: flex;
+    gap: 9px;
+    font-family: var(--open-sans);
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    font-size: 15px;
+    color: rgba(var(--light-rgb), 0.9);
+    text-decoration: none;
+    margin-bottom: 9px;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--accent-light);
+}
+
+.footer-list {
+    font-family: var(--open-sans);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+
+}
+
+.footer-list li {
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.footer-list span {
+    display: block;
+    color: rgba(var(--light-rgb), 0.9);
+    font-weight: 400;
+    line-height: 1.5rem;
+
+}
+
+.footer-tel {
+    font-family: var(--nunito-sans);
+    display: block;
+    color: var(--accent-light);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 800;
+    transition: color 0.3s;
+    line-height: 2.38rem;
+}
+
+.footer-tel:hover {
+    color: var(--accent-dark);
+}
+
+
