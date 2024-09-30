@@ -213,6 +213,9 @@ body {
     margin-top: 100px;
     margin-bottom: 34px;
 }
+.menu {
+    margin-bottom: 100px;
+}
 .menu-select {
     color: var(--dark);
     font-size: 15px;
@@ -297,11 +300,19 @@ body {
     font-weight: bold;
     padding: 11px 32px;
 }
+.menu-btn:hover {
+    background-color: var(--accent-dark);
+    transition: background-color 0.3s ease;
+
+
+}
+
 .menu-btn::before {
     content: '';
     display: block;
     width: 18px;
-    background-image: url(/images/cart.svg);
+    height: 18px;
+    background-image: url('../images/cart.svg');
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -372,6 +383,7 @@ body {
 .footer-list li {
     margin-bottom: 12px;
     font-weight: 700;
+    line-height: 1.5rem;
 }
 
 .footer-list span {
