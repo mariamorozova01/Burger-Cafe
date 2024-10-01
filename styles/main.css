@@ -97,6 +97,26 @@ body {
     left: 17px;
     bottom: 0;
 }
+.button-up {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    max-width: 100px;
+    text-align: center;
+    font-family: var(--nunito-sans);
+    color: var(--dark);
+    background-color: var(--accent-light);
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    transition: 0.3s;
+}
+.button-up:hover{
+    background-color: var(--accent-dark);
+}
 /*Hero Banner*/
 .hero {
     background-image: url(../images/Group\ 3.jpeg);
@@ -172,11 +192,14 @@ body {
     padding: 100px;
 }
 .banner-btn {
+    display: block;
+    max-width: 170px;
+    text-align: center;
     font-family: var(--nunito-sans);
     color: var(--dark);
     background-color: var(--accent-light);
     border-radius: 5px;
-    padding: 20px 25px;
+    padding: 20px 0;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
@@ -186,6 +209,12 @@ body {
 }
 .banner-btn:hover{
     background-color: var(--accent-dark);
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
 }
 .banner-description {
     font-family: var(--open-sans);
