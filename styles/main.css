@@ -221,7 +221,7 @@ body {
     font-size: 15px;
     appearance: none;
     flex-basis: 279px;
-    background-image: url(/images/chevron-down.svg);
+    background-image: url(../images/chevron-down.svg);
     background-size: 14px 10px;
     background-repeat: no-repeat;
     background-position: 89% center;
@@ -312,7 +312,7 @@ body {
     display: block;
     width: 18px;
     height: 18px;
-    background-image: url(./images/cart.svg);
+    background-image: url(../images/cart.svg);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -332,7 +332,7 @@ body {
 }
 .footer-logo {
     display: block;
-    background: url(./images/Logo_light.svg) no-repeat center;
+    background: url(../images/Logo_light.svg) no-repeat center;
     background-size: contain;
     width: 63px;
     height: 56px;
