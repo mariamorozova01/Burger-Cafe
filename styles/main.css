@@ -16,7 +16,8 @@ body {
     font-family: var(--open-sans);
     font-style: normal;
     font-weight: 400;
-.container {
+
+    .container {
     width: 100%;
     max-width: 1182px;
     margin: 0 auto;
@@ -58,10 +59,11 @@ body {
     height: 3px;
     background-color: transparent;
     border-radius: 1.5px;
+    transition: 0.3s;
+
 }
 .nav-link:hover::after{
     background-color: var(--accent-light);
-
 }
 .cart {
     color: var(--dark);
@@ -117,6 +119,8 @@ body {
 }
 .breadcrumbs-link {
     color: rgba(var(--light-rgb), .5);
+    transition: 0.3s;
+
 }
 .breadcrumbs-link:hover {
     color: var(--accent-light);
@@ -137,7 +141,6 @@ body {
     line-height: 6.75rem;
     text-transform: capitalize;
     margin: 8px 0 11px 0
-    
 }
 .hero-description {
     color: rgba(var(--light-rgb), 0.8);
@@ -170,6 +173,8 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    transition: 0.3s;
+
 }
 .banner-btn:hover{
     background-color: var(--accent-dark);
@@ -228,7 +233,6 @@ body {
     border: 1px solid var(--line);
     padding: 13px 30px;
     border-radius: 22px;
-    
 }
 .menu-item {
     font-family: var(--nunito-sans);
@@ -243,7 +247,6 @@ body {
     color: var(--dark);
     text-transform: uppercase;
     margin: 0;
-
 }
 .menu-name {
     color: var(--dark);
@@ -295,16 +298,13 @@ body {
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
     text-transform: uppercase;
     font-weight: bold;
     padding: 11px 32px;
 }
 .menu-btn:hover {
     background-color: var(--accent-dark);
-    transition: background-color 0.3s ease;
-
-
 }
 
 .menu-btn::before {
@@ -364,7 +364,7 @@ body {
     color: rgba(var(--light-rgb), 0.9);
     text-decoration: none;
     margin-bottom: 9px;
-    transition: color 0.3s;
+    transition: 0.3s;
 }
 
 .footer-nav a:hover {
@@ -377,7 +377,6 @@ body {
     padding: 0;
     margin: 0;
     font-size: 15px;
-
 }
 
 .footer-list li {
@@ -391,7 +390,6 @@ body {
     color: rgba(var(--light-rgb), 0.9);
     font-weight: 400;
     line-height: 1.5rem;
-
 }
 
 .footer-tel {
@@ -401,7 +399,7 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: 800;
-    transition: color 0.3s;
+    transition: 0.3s;
     line-height: 2.38rem;
 }
 
