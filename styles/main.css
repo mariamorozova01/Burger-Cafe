@@ -586,7 +586,7 @@ body {
 .header-wrapper {
     gap: 40px;
 }*/
-@media (width <= 768px){
+@media (max-width: 768px){
     .logo {
         width: 150px;
         height: 48px;
@@ -638,6 +638,7 @@ body {
     .footer {
         padding: 62px 0 71px 0;
 }
+}
  @media  (max-width: 730px) {
     .nav {
         display: none;
@@ -665,7 +666,7 @@ body {
         display: block;
         width: 22px;
         height: 22px;
-        background-image: url(../images/close\ 1.svg);
+        background-image: url(../images/close.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-color: transparent;
@@ -689,4 +690,81 @@ body {
         height: 37px;
         width: 117px;
     }
+    .menu-thumb {
+        height: 50vw;
+    }
+    .menu-item_additionally .menu-thumb {
+        height: 38vw;
+    }
+    
  }
+ @media (max-width: 360px) {
+    .hero {
+        padding: 55px 0;
+    }
+    .hero-title {
+        font-size: 38px;
+        line-height: 3.25rem;
+    }
+    .banner {
+        margin-top: 33px;
+        margin-bottom: 50px;
+ }
+ .banner-wrapper {
+    padding: 35px 17px;
+}
+    .menu-title {
+    font-size: 27px;
+    }
+    .menu-select {
+        font-size: 12px;
+        padding: 8px 15px;
+        line-height: 1.5rem;
+        flex-basis: 136px;
+        width: 136px;
+    }
+    .menu-name {
+        font-size: 13px;
+        line-height: 1.25rem;
+        margin-bottom: 0;
+    }
+    .menu-price {
+        font-size: 12px;
+        line-height: 1.75rem;
+        margin-bottom: 7px;
+    }.menu-item_additionally .menu-thumb {
+        margin-bottom: 0;
+        height: 38vw;
+    }
+    .menu-thumb {
+        margin-bottom: 7px;
+    }
+    .menu-box {
+        gap: 24px 20px;
+    }
+    .menu-btn {
+        padding: 10px 22px;
+    }
+    .menu-add {
+        margin-bottom: 80px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .footer-title {
+        font-size: 18px;
+        line-height: 2.38rem;
+    }
+    .footer-wrapper {
+        gap: 33px;
+        position: relative;
+    }
+    .footer-tel_mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .footer-tel_mobile + .footer-tel_mobile {
+        top: 24px
+    }
+    
