@@ -16,7 +16,7 @@ body {
     font-family: var(--open-sans);
     font-style: normal;
     font-weight: 400;
-
+}
 .container {
     width: 100%;
     max-width: 1182px;
@@ -274,7 +274,7 @@ body {
     padding: 13px 30px;
     border-radius: 22px;
 }
-.menu-item {
+.menu-item, .menu-item_additionally {
     font-family: var(--nunito-sans);
     text-align: center;
 }
@@ -304,7 +304,7 @@ body {
     letter-spacing: 0rem;
     margin: 0 0 10px 0;
 }
-.menu-box {
+.menu-box, .menu-box_additionally {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -365,10 +365,15 @@ body {
     padding: 110px 0 120px 0;
     color: #fff;
 }
+.footer-item:last-child {
+    flex-basis: 194px;
+
+}
 
 .footer-wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 .footer-logo {
     display: block;
@@ -395,7 +400,6 @@ body {
     font-family: var(--open-sans);
     font-size: 15px;
     font-weight: 400;
-    display: flex;
     flex-direction: column;
 }
 
@@ -432,7 +436,7 @@ body {
     line-height: 1.5rem;
 }
 
-.footer-tel {
+.footer-tel, .footer-tel_mobile {
     font-family: var(--nunito-sans);
     display: block;
     color: var(--accent-light);
@@ -441,6 +445,10 @@ body {
     font-weight: 800;
     transition: 0.3s;
     line-height: 2.38rem;
+    text-align: right;
+}
+.footer-tel_mobile {
+    display: none;
 }
 
 .footer-tel:hover {
@@ -559,7 +567,7 @@ body {
 }
 
 /*Media*/
-/*@media (max-width: 1080px) {
+/*@media (width <= 1080px) {
     .nav {
         margin-left: 0;
         gap: min(2vw, 22px)
@@ -567,7 +575,7 @@ body {
 .header-wrapper {
     gap: 40px;
 }*/
-@media (max-width: 768px){
+@media (width <= 768px){
     .logo {
         width: 150px;
         height: 48px;
@@ -584,6 +592,38 @@ body {
     .banner-wrapper  {
         padding: 100px 40px;
 }
-.menu-header {
-    margin-top: 80px;
+    .menu-header {
+        margin-top: 80px;
+}
+    .menu-box {
+        grid-template-columns: repeat(2, 1fr);
+}
+    .menu-box_additionally {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .menu-item_additionally {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+    }
+    .menu-item_additionally .menu-thumb {
+        margin-bottom: 0;
+        height: 260px;
+    }
+    .menu-info {
+        flex-basis: calc(40%);
+    }
+    .footer-tel_mobile {
+        display: block;
+        text-align: left;
+    }
+    .footer-item:last-child {
+        display: none;
+    }
+    .footer-nav {
+        margin-bottom: 20px;
+    }
+    .footer {
+        padding: 62px 0 71px 0;
 }
