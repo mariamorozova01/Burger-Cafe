@@ -17,18 +17,20 @@ body {
     font-style: normal;
     font-weight: 400;
 
-    .container {
+.container {
     width: 100%;
     max-width: 1182px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    box-sizing: border-box;
 }
 /*Header*/
-.header {
+.header-wrapper {
     display: flex;
     align-items: center;
-    gap: 196px;
+    justify-content: space-between;
+    /*gap: 56px;*/
     padding: 26px 0;
     border-bottom: 1px solid var(--line);
 }
@@ -42,9 +44,10 @@ body {
     background-size: contain;
 }
 .nav {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
     display: flex;
     gap: 47px;
+    margin-left: min (10vw, 140px);
 }
 .nav-link {
     color: var(--dark);
@@ -553,4 +556,34 @@ body {
 
 .contact-tel:hover {
     color: var(--accent-light);
+}
+
+/*Media*/
+/*@media (max-width: 1080px) {
+    .nav {
+        margin-left: 0;
+        gap: min(2vw, 22px)
+}
+.header-wrapper {
+    gap: 40px;
+}*/
+@media (max-width: 768px){
+    .logo {
+        width: 150px;
+        height: 48px;
+    }
+    /*.header-wrapper {
+        gap: 45px;
+    }*/
+    .nav {
+        gap: 22px;
+}
+    .banner {
+        margin-top: 72px;
+}
+    .banner-wrapper  {
+        padding: 100px 40px;
+}
+.menu-header {
+    margin-top: 80px;
 }
