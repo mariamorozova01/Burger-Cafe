@@ -274,7 +274,7 @@ body {
     color: var(--dark);
     font-size: 15px;
     appearance: none;
-    flex-basis: 279px;
+    width: 279px;
     background-image: url(../images/chevron-down.svg);
     background-size: 14px 10px;
     background-repeat: no-repeat;
@@ -696,9 +696,12 @@ body {
     .menu-item_additionally .menu-thumb {
         height: 38vw;
     }
+    .menu-select  {
+        width: 35vw;
+    }
     
  }
- @media (max-width: 360px) {
+ @media (max-width: 430px) {
     .hero {
         padding: 55px 0;
     }
@@ -709,10 +712,10 @@ body {
     .banner {
         margin-top: 33px;
         margin-bottom: 50px;
- }
- .banner-wrapper {
+    }
+    .banner-wrapper {
     padding: 35px 17px;
-}
+    }
     .menu-title {
     font-size: 27px;
     }
